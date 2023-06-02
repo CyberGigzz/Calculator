@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+    </style>
+    <link rel="shortcut icon" href="/img/calc.ico" />
+    <script src="script.js" defer></script>
     <title>Calculator</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main class="main">
+      <div class="calculator">
+        <div class="output">
+          <div class="previous_operation">12</div>
+          <div class="current_operation">12</div>
+        </div>
+
+        <div class="buttons_grid">
+          <button class="buttons light-btn border-radius--left">C</button>
+          <button class="buttons light-btn">&divide;</button>
+          <button class="buttons light-btn">&times;</button>
+          <button class="buttons light-btn border-radius--right">&#9003;</button>
+          <button class="buttons dark-btn">7</button>
+          <button class="buttons dark-btn">8</button>
+          <button class="buttons dark-btn">9</button>
+          <button class="buttons light-btn">&minus;</button>
+          <button class="buttons dark-btn">4</button>
+          <button class="buttons dark-btn">5</button>
+          <button class="buttons dark-btn">6</button>
+          <button class="buttons light-btn">&plus;</button>
+          <button class="buttons dark-btn">1</button>
+          <button class="buttons dark-btn">2</button>
+          <button class="buttons dark-btn">3</button>
+          <button class="buttons equal">=</button>
+          <button class="buttons dark-btn">&#37;</button>
+          <button class="buttons dark-btn">0</button>
+          <button class="buttons dark-btn">.</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
