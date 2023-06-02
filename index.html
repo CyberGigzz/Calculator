@@ -9,6 +9,10 @@
       @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
     </style>
     <link rel="shortcut icon" href="/img/calc.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" defer></script>
     <title>Calculator</title>
   </head>
@@ -16,32 +20,48 @@
     <main class="main">
       <div class="calculator">
         <div class="output">
-          <div class="previous_operation">12</div>
-          <div class="current_operation">12</div>
+          <div class="previous_operation"></div>
+          <div class="current_operation"></div>
         </div>
 
         <div class="buttons_grid">
-          <button class="buttons light-btn border-radius--left">C</button>
-          <button class="buttons light-btn">&divide;</button>
-          <button class="buttons light-btn">&times;</button>
-          <button class="buttons light-btn border-radius--right">&#9003;</button>
-          <button class="buttons dark-btn">7</button>
-          <button class="buttons dark-btn">8</button>
-          <button class="buttons dark-btn">9</button>
-          <button class="buttons light-btn">&minus;</button>
-          <button class="buttons dark-btn">4</button>
-          <button class="buttons dark-btn">5</button>
-          <button class="buttons dark-btn">6</button>
-          <button class="buttons light-btn">&plus;</button>
-          <button class="buttons dark-btn">1</button>
-          <button class="buttons dark-btn">2</button>
-          <button class="buttons dark-btn">3</button>
-          <button class="buttons equal">=</button>
-          <button class="buttons dark-btn">&#37;</button>
-          <button class="buttons dark-btn">0</button>
-          <button class="buttons dark-btn">.</button>
+          <button id="cBtn" class="buttons light-btn border-radius--left">
+            C
+          </button>
+          <button id="divideBtn" class="buttons light-btn">&divide;</button>
+          <button id="multiplyBtn" class="buttons light-btn">&times;</button>
+          <button id="removeBtn" class="buttons light-btn border-radius--right">
+            &#9003;
+          </button>
+          <button id="sevenBtn" class="buttons dark-btn">7</button>
+          <button id="eightBtn" class="buttons dark-btn">8</button>
+          <button id="nineBtn" class="buttons dark-btn">9</button>
+          <button id="minusBtn" class="buttons light-btn">&minus;</button>
+          <button id="fourBtn" class="buttons dark-btn">4</button>
+          <button id="fiveBtn" class="buttons dark-btn">5</button>
+          <button id="sixBtn" class="buttons dark-btn">6</button>
+          <button id="plusBtn" class="buttons light-btn">&plus;</button>
+          <button id="oneBtn" class="buttons dark-btn">1</button>
+          <button id="twoBtn" class="buttons dark-btn">2</button>
+          <button id="threeBtn" class="buttons dark-btn">3</button>
+          <button id="equalBtn" class="buttons equal">=</button>
+          <button id="percentBtn" class="buttons dark-btn">&#37;</button>
+          <button id="zeroBtn" class="buttons dark-btn">0</button>
+          <button id="dotBtn" class="buttons dark-btn">.</button>
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <p class="copyright">
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        GigDev
+        <a class="leftmg" href="https://github.com/Giga-Dev148" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </p>
+    </footer>
   </body>
 </html>
