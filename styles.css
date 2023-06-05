@@ -29,8 +29,14 @@ body {
 
 /* Output */
 .output {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: 1fr minmax(5rem, auto);
   padding: 2rem 3rem;
   font-weight: 500;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-align: right;
 }
 
 .previous_operation {
@@ -38,7 +44,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   font-size: 1.8rem;
-  padding-top: 10rem;
+  min-height: 10rem;
 }
 
 .current_operation {
@@ -46,8 +52,10 @@ body {
   align-items: center;
   justify-content: flex-end;
 
+  /* max-width: 100%; */
   font-size: 3.2rem;
-  min-height: 5rem;
+  /* min-height: 5rem; */
+  /* flex-wrap: wrap; */
 }
 
 /* Button grid */
@@ -75,11 +83,15 @@ body {
   font-size: 2.4rem;
   height: 15rem;
   background-color: #ffbb00;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .equal:hover {
   background-color: #ffd700;
+}
+
+.equal:active {
+  background-color: #ff9900;
 }
 
 .light-btn {
@@ -91,12 +103,20 @@ body {
   background-color: #aaaaaa;
 }
 
+.light-btn:active {
+  background-color: #595775;
+}
+
 .dark-btn {
   background-color: #2e2f3e;
 }
 
 .dark-btn:hover {
   background-color: #7e7d8c;
+}
+
+.dark-btn:active {
+  background-color: #595775;
 }
 
 .border-radius--left {
