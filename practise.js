@@ -1,7 +1,7 @@
 class Calculator {
-  constructor(previousOperandTextElement, currentOperandTextElement) {
-    this.previousOperandTextElement = previousOperandTextElement;
-    this.currentOperandTextElement = currentOperandTextElement;
+  constructor(previousOperaitonTextElement, currentOperationTextElement) {
+    this.previousOperationTextElement = previousOperationTextElement;
+    this.currentOperationTextElement = currentOperationTextElement;
     this.clear();
   }
 
@@ -79,16 +79,15 @@ class Calculator {
   }
 
   updateDisplay() {
-    console.log(this.getDisplayNumber(this.currentOperand));
-    this.currentOperandTextElement.innerText = this.getDisplayNumber(
+    this.currentOperationTextElement.innerText = this.getDisplayNumber(
       this.currentOperand
     );
     if (this.operation != null) {
-      this.previousOperandTextElement.innerText = `${this.getDisplayNumber(
+      this.previousOpertitonTextElement.innerText = `${this.getDisplayNumber(
         this.previousOperand
       )} ${this.operation}`;
     } else {
-      this.previousOperandTextElement.innerText = "";
+      this.previousOperationTextElement.innerText = "";
     }
   }
 }
@@ -98,16 +97,16 @@ const operationButtons = document.querySelectorAll("[data-operation]");
 const equalsButton = document.querySelector("[data-equals]");
 const deleteButton = document.querySelector("[data-delete]");
 const allClearButton = document.querySelector("[data-all-clear]");
-const previousOperandTextElement = document.querySelector(
-  "[data-previous-operand]"
+const previousOperationTextElement = document.querySelector(
+  "[data-previous-operation]"
 );
-const currentOperandTextElement = document.querySelector(
-  "[data-current-operand]"
+const currentOperationTextElement = document.querySelector(
+  "[data-current-operation]"
 );
 
 const calculator = new Calculator(
-  previousOperandTextElement,
-  currentOperandTextElement
+  previousOperationTextElement,
+  currentOperationTextElement
 );
 
 numberButtons.forEach((button) => {
@@ -138,3 +137,4 @@ deleteButton.addEventListener("click", (button) => {
   calculator.delete();
   calculator.updateDisplay();
 });
+
