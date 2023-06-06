@@ -39,7 +39,7 @@ class Calculator {
       case "+":
         computation = prev + current;
         break;
-      case "-":
+      case "&minus;":
         computation = prev - current;
         break;
       case "*":
@@ -79,7 +79,6 @@ class Calculator {
   }
 
   updateDisplay() {
-    console.log(this.getDisplayNumber(this.currentOperand));
     this.currentOperandTextElement.innerText = this.getDisplayNumber(
       this.currentOperand
     );
